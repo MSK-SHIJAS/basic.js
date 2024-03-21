@@ -1,0 +1,10 @@
+const d = new Date();
+console.log(d);
+
+console.log("after 2 year");
+const e = new Date();
+e.setDate(21);
+e.setMonth(2);
+e.setFullYear(2026);
+console.log(e);
+              
