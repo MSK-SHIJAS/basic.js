@@ -1,0 +1,24 @@
+PREFIX WITHOU BULIT IN FUNCTION
+function findStringsWithPrefix(strings, prefix) {
+    const result = [];
+
+    for (let i = 0; i in strings; i++) {
+        let j = 0;
+
+        while (strings[i][j] === prefix[j] && prefix[j] !== undefined) {
+            j++;
+        }
+
+        if (prefix[j] === undefined) {
+            result.push(strings[i]);
+        }
+    }
+
+    return result;
+}
+
+const strings = ["cat", "carrot", "banana", "apartment", "grape"];
+const prefix = "ca";
+
+const result = findStringsWithPrefix(strings, prefix);
+console.log(result); 
